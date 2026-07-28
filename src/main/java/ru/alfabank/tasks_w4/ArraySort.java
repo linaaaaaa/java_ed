@@ -4,7 +4,7 @@ import ru.alfabank.Utils;
 
 import java.util.Arrays;
 
-public class ArraySort_ReverseAndRotate {
+public class ArraySort {
     static void main() {
         System.out.println("Введите размер массива: ");
         int arrayLength= Utils.ReadFromConsole.readPosInt();

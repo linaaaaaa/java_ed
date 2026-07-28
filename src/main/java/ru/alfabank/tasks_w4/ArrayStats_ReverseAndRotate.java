@@ -3,9 +3,8 @@ package ru.alfabank.tasks_w4;
 import ru.alfabank.Utils;
 
 import java.util.Arrays;
-import java.util.Random;
 
-public class ArrayStats {
+public class ArrayStats_ReverseAndRotate {
     static void main() {
         //ArraySort
         System.out.println("Введите размер массива: ");
@@ -42,7 +41,7 @@ public class ArrayStats {
         System.out.printf("Среднее арифметическое: %.2f\n",average);
 
         //ReverseAndRotate
-        ArrayStats arrayStats=new ArrayStats();
+        ArrayStats_ReverseAndRotate arrayStats=new ArrayStats_ReverseAndRotate();
         System.out.println("Массив в развороте: "+ Arrays.toString(arrayStats.reverse(array)));
         System.out.println("Введите целое положительное число:");
         int k=Utils.ReadFromConsole.readPosInt();
