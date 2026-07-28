@@ -1,4 +1,4 @@
-package ru.alfabank.task2;
+package ru.alfabank.tasks_w2;
 
 public class StringExperiments {
     private String name="Лина";

@@ -1,4 +1,4 @@
-package ru.alfabank.task3;
+package ru.alfabank.tasks_w3;
 import java.util.Scanner;
 
 public class SumNumbers {

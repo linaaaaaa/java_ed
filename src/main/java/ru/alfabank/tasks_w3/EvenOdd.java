@@ -1,18 +1,17 @@
-package ru.alfabank.task3;
+package ru.alfabank.tasks_w3;
+
 import java.util.Scanner;
 
 public class EvenOdd {
-    int number=0;
+    int number = 0;
 
     static void main() {
-        EvenOdd eo=new EvenOdd();
-        Scanner scan=new Scanner(System.in);
+        EvenOdd eo = new EvenOdd();
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter integer:");
 
-
-
         try {
-            eo.number=scan.nextInt();
+            eo.number = scan.nextInt();
         } catch (Exception e) {
             System.out.println("Error. Not integer.");
             return;
@@ -25,10 +24,9 @@ public class EvenOdd {
 //            System.out.println("Error. Not integer.");
 //            return;
 //        }
-        if(eo.number%2==0){
+        if (eo.number % 2 == 0) {
             System.out.println("Number is even");
-        }
-        else {
+        } else {
             System.out.println("Number is odd");
         }
     }

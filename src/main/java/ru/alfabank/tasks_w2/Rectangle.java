@@ -1,4 +1,4 @@
-package ru.alfabank.task2;
+package ru.alfabank.tasks_w2;
 import java.util.Scanner;
 
 public class Rectangle {
