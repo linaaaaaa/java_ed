@@ -1,4 +1,6 @@
 package ru.alfabank.tasks_w3;
+import ru.alfabank.Utils;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -11,9 +13,9 @@ public class MatrixSearch {
         int width;
         MatrixSearch matrixSearch=new MatrixSearch();
         System.out.print("Введите длину массива: ");
-        length=matrixSearch.readPosInt();
+        length= Utils.ReadFromConsole.readPosInt();
         System.out.print("Введите ширину массива: ");
-        width=matrixSearch.readPosInt();
+        width=Utils.ReadFromConsole.readPosInt();
         System.out.println("Матрица сгенерирована:");
         matrixSearch.matrix=new int[length][width];
         for (int i = 0; i < length; i++) {
@@ -30,7 +32,7 @@ public class MatrixSearch {
         }
 
         System.out.print("Введите искомое число: ");
-        matrixSearch.target=matrixSearch.readInt();
+        matrixSearch.target=Utils.ReadFromConsole.readInt();
         boolean targetFound=false;
         searchTarget: for (int i = 0; i < length; i++) {
             for (int j = 0; j < width; j++) {
@@ -46,31 +48,31 @@ public class MatrixSearch {
         }
     }
 
-    private int readPosInt(){
-        int resultPosInt;
-        resultPosInt=this.readInt();
-        if (resultPosInt<=0){
-                System.out.println("Ошибка. Необходимо ввести целое положительное число.");
-                System.exit(0);
-            }
-        else{
-            return resultPosInt;
-        }
-        return resultPosInt;
-    }
-
-    private int readInt(){
-        Scanner scanner=new Scanner(System.in);
-        int resultInt=0;
-        if(scanner.hasNextInt()){
-            resultInt=scanner.nextInt();
-            scanner.close();
-            return resultInt;
-        }
-        else {
-            System.out.println("Ошибка. Необходимо ввести целое положительное число.");
-            System.exit(0);
-        }
-        return resultInt;
-    }
+//    private int readPosInt(){
+//        int resultPosInt;
+//        resultPosInt=this.readInt();
+//        if (resultPosInt<=0){
+//                System.out.println("Ошибка. Необходимо ввести целое положительное число.");
+//                System.exit(0);
+//            }
+//        else{
+//            return resultPosInt;
+//        }
+//        return resultPosInt;
+//    }
+//
+//    private int readInt(){
+//        Scanner scanner=new Scanner(System.in);
+//        int resultInt=0;
+//        if(scanner.hasNextInt()){
+//            resultInt=scanner.nextInt();
+//            scanner.close();
+//            return resultInt;
+//        }
+//        else {
+//            System.out.println("Ошибка. Необходимо ввести целое положительное число.");
+//            System.exit(0);
+//        }
+//        return resultInt;
+//    }
 }

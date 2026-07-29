@@ -1,4 +1,6 @@
 package ru.alfabank.tasks_w3;
+import ru.alfabank.Utils;
+
 import java.util.Scanner;
 
 public class SumNumbers {
@@ -7,15 +9,7 @@ public class SumNumbers {
         int sum =0;
         while (true){
             System.out.println("Введите целое число:");
-            int num;
-            if(scan.hasNextInt()){
-                num =scan.nextInt();
-            }
-            else {
-                System.out.println("Ошибка. Некорректный ввод");
-                scan.close();
-                return;
-            }
+            int num= Utils.ReadFromConsole.readInt();
             sum +=num;
             if (num==0){
                 System.out.println("Сумма введенных чисел: "+sum);
