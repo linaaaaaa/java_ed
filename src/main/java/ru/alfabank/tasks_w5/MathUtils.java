@@ -10,8 +10,8 @@ public class MathUtils {
     }
 
     public String multiply(String a, String b){
-        double aDouble=0;
-        double bDouble=0;
+        double aDouble;
+        double bDouble;
         try{
             aDouble=Double.parseDouble(a);
             bDouble=Double.parseDouble(b);
