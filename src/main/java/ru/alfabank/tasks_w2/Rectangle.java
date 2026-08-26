@@ -1,8 +1,6 @@
 package ru.alfabank.tasks_w2;
 import ru.alfabank.Utils;
 
-import java.util.Scanner;
-
 public class Rectangle {
     int length=0;
     int width=0;
