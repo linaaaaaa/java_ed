@@ -17,13 +17,6 @@ public class EvenOdd {
             return;
         }
 
-//        if(scan.hasNextInt()){
-//            eo.number=scan.nextInt();
-//        }
-//        else {
-//            System.out.println("Error. Not integer.");
-//            return;
-//        }
         if (eo.number % 2 == 0) {
             System.out.println("Number is even");
         } else {
