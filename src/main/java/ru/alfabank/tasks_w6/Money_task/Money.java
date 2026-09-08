@@ -10,7 +10,7 @@ public class Money {
     }
 
     public static Money of(double amount, String currency) {
-        return new Money((long)(amount*100),Currency.valueOf(currency));
+        return new Money((long) (amount * 100), Currency.valueOf(currency));
     }
 
     public static Money ofCents(long cents, String currency) {
@@ -18,7 +18,7 @@ public class Money {
     }
 
     public static Money ofRubles(long rub, int kop) {
-        return new Money(rub*100+kop,Currency.RUB);
+        return new Money(rub * 100 + kop, Currency.RUB);
     }
 
     public Money add(Money money) {
@@ -33,7 +33,7 @@ public class Money {
     }
 
     public String toString() {
-        double amount=(double)CENTS/100;
-        return amount+ " " + CURRENCY;
+        double amount = (double) CENTS / 100;
+        return amount + " " + CURRENCY;
     }
 }

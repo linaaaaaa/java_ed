@@ -2,7 +2,7 @@ package ru.alfabank.tasks_w6;
 
 public class Person {
     private String name;
-    private int age=0;
+    private int age = 0;
 
     public String getName() {
         return name;
@@ -12,8 +12,8 @@ public class Person {
         return age;
     }
 
-    public String toString(){
-        return this.name+", age:"+this.age;
+    public String toString() {
+        return this.name + ", age:" + this.age;
     }
 
     public Person(String name) {
@@ -21,7 +21,7 @@ public class Person {
     }
 
     public Person(String name, int age) {
-        if(age<0){
+        if (age < 0) {
             throw new IllegalArgumentException("age must be >= 0");
         }
         this(name);
