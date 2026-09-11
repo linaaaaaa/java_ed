@@ -1,4 +1,4 @@
-package ru.alfabank.tasks_w7.task_7;
+package ru.alfabank.tasks_w7.task7;
 
 public class CardPayment extends Payment{
     private String panMasked;

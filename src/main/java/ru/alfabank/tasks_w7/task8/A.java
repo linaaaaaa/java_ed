@@ -1,4 +1,4 @@
-package ru.alfabank.tasks_w7.task_8;
+package ru.alfabank.tasks_w7.task8;
 
 public class A {
     public String type = "A";

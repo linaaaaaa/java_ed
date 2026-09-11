@@ -1,4 +1,4 @@
-package ru.alfabank.tasks_w7.task_6;
+package ru.alfabank.tasks_w7.task6;
 
 public class Child extends Base{
     static String who(){

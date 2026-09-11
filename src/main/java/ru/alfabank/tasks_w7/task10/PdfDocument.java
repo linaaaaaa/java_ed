@@ -1,4 +1,4 @@
-package ru.alfabank.tasks_w7.task_10;
+package ru.alfabank.tasks_w7.task10;
 
 public class PdfDocument extends Document {
     private String version;
