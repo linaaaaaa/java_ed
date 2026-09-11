@@ -1,12 +1,12 @@
 package ru.alfabank.tasks_w6.Money_task;
 
 public class Money {
-    private final long CENTS;
-    private final Currency CURRENCY;
+    private final long cents;
+    private final Currency currency;
 
     private Money(long cents, Currency currency) {
-        this.CENTS = cents;
-        this.CURRENCY = currency;
+        this.cents = cents;
+        this.currency = currency;
     }
 
     public static Money of(double amount, String currency) {
@@ -22,18 +22,18 @@ public class Money {
     }
 
     public Money add(Money money) {
-        if (CURRENCY != money.CURRENCY) {
+        if (currency != money.currency) {
             throw new IllegalArgumentException("Операция допустима только для одинаковых валют!");
         }
-        return new Money(CENTS + money.CENTS, CURRENCY);
+        return new Money(cents + money.cents, currency);
     }
 
     public Money multiply(int n) {
-        return new Money(CENTS * n, CURRENCY);
+        return new Money(cents * n, currency);
     }
 
     public String toString() {
-        double amount = (double) CENTS / 100;
-        return amount + " " + CURRENCY;
+        double amount = (double) cents / 100;
+        return amount + " " + currency;
     }
 }

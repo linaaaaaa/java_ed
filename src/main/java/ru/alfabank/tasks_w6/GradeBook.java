@@ -5,6 +5,14 @@ import java.util.Arrays;
 public class GradeBook {
     private int[] grades;
 
+    public GradeBook(int[] grades) {
+        this.grades = Arrays.copyOf(grades, grades.length);
+    }
+
+    public int[] getGrades() {
+        return Arrays.copyOf(grades, grades.length);
+    }
+
     public void setGrade(int index, int value) {
         if (index < 0 || index >= grades.length) {
             System.out.println("Индекс за пределами размера массива");
@@ -23,14 +31,6 @@ public class GradeBook {
 
     public double average() {
         return Arrays.stream(grades).average().getAsDouble();
-    }
-
-    public GradeBook(int[] grades) {
-        this.grades = Arrays.copyOf(grades, grades.length);
-    }
-
-    public int[] getGrades() {
-        return Arrays.copyOf(grades, grades.length);
     }
 
     static void main() {

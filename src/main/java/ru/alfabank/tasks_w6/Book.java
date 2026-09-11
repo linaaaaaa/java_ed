@@ -5,10 +5,6 @@ public class Book {
     private String author;
     private int pages;
 
-    public void printInfo() {
-        System.out.println("\"" + title + "\" - " + author + ", страниц: " + pages);
-    }
-
     public Book(String title, String author, int pages) {
         this.title = title;
         this.author = author;
@@ -40,5 +36,9 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public void printInfo() {
+        System.out.println("\"" + title + "\" - " + author + ", страниц: " + pages);
     }
 }
