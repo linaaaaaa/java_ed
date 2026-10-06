@@ -1,6 +1,6 @@
 package ru.alfabank.taks_w8.task1;
 
-public class Triangle extends GeometricFigure{
+public class Triangle extends GeometricFigure {
     private double height;
     private double base;
 
@@ -17,6 +17,6 @@ public class Triangle extends GeometricFigure{
 
     @Override
     public double calculateArea() {
-        return height*base/2;
+        return height * base / 2;
     }
 }

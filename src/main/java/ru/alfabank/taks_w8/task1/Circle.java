@@ -1,6 +1,6 @@
 package ru.alfabank.taks_w8.task1;
 
-public class Circle extends GeometricFigure{
+public class Circle extends GeometricFigure {
     private double radius;
 
     public Circle(double radius) {
@@ -17,7 +17,7 @@ public class Circle extends GeometricFigure{
     }
 
     @Override
-    public double calculateArea(){
-        return Math.PI*radius*radius;
+    public double calculateArea() {
+        return Math.PI * radius * radius;
     }
 }

@@ -7,11 +7,12 @@ public abstract class GeometricFigure {
         this.name = name;
     }
 
-    public GeometricFigure(){}
+    public GeometricFigure() {
+    }
 
     public abstract double calculateArea();
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
